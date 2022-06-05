@@ -1,0 +1,21 @@
+<html>
+<center>
+<head>
+	<title>Random Joke Generator</title>
+</head>
+<body>
+	<h1>Random Joke Generator</h1>
+	<form method="post" action="/">
+		<input id="number" name="numJokes" type="number" value={{numJokes}} size="4">
+        <input type="submit" value="Get Random Jokes" name="getJokes"/>
+    </form>
+    {% for joke in jokes %}
+  		<h3>{{ joke }}</h3>
+  		<hr style="width:80%">
+  	{% endfor %}
+
+  	Credit for jokes: <a href="https://icanhazdadjoke.com/"> icanhazdadjoke </a>
+
+</body>
+</center>
+</html>  
